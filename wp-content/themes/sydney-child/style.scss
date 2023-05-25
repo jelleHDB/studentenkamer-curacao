@@ -1,0 +1,658 @@
+/*
+ Theme Name:   Sydney Child
+ Theme URI:    https://www.helemaaldebom.nl/
+ Description:  Sydney Child Theme
+ Author:       Bas Romeijn
+ Author URI:   https://www.helemaaldebom.nl/
+ Template:     sydney
+ Version:      1.0.0
+ Tags:         plaats, hier, jouw, tags, gescheiden, door, kommas
+ Text Domain:  sydney-child
+*/
+
+/* =Eigen CSS hier beneden plaatsen
+-------------------------------------------------------------- */
+
+@font-face {
+    font-family: PapayaFont;
+    src: url("fonts/papaya.otf")
+}
+
+$mainColor : #dda327;
+$mainFont : PapayaFont;
+
+
+
+/* Button styling */
+.buttonSlider {
+    background: $mainColor;
+    color: black;
+    padding: 15px 55px; 
+    border-radius: 10px;
+    border: 1px solid $mainColor;
+    font-family: $mainFont;
+    text-transform: uppercase;
+}
+
+.buttonSlider:hover {
+    background: transparent;
+    color: $mainColor;
+}
+
+
+
+/* Header */
+#masthead {
+    position: absolute;
+    max-width: 100%;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.container-fluid {
+    max-width: 1600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+#masthead-mobile {
+    background: transparent;
+    position: absolute;
+    width: 100%;
+    padding-top: 0px;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.site-header-inner {
+    margin-top: -25px;
+}
+
+.titel-slider {
+    color: white;
+    font-family: $mainFont;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.site-logo {
+    max-height: 170px !important;
+}
+
+.fa-angle-down {
+    font-size: 50px;
+    color: white;
+}
+
+/* Header responsive */
+@media only screen and (min-width: 1200px) {
+    .titel-slider {
+        margin: 350px 0 85px 0;
+        font-size: 80px;
+    }
+
+    #header-inhoud {
+        text-align: center;
+    }
+
+    #link-down {
+        margin: 150px 0 250px 0;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 769px)  {
+    .titel-slider {
+        margin: 300px 0 85px 0;
+        font-size: 60px;
+    }
+
+    #header-inhoud {
+        text-align: center;
+    }
+
+    #link-down {
+        margin: 100px 0 110px 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .titel-slider {
+        margin: 380px 0 85px 0;
+        font-size: 50px;
+    }
+
+    #header-inhoud {
+        padding: 0 30px;
+    }
+
+    #header-inhoud {
+        text-align: center;
+    }
+
+    #link-down {
+        margin: 100px 0 110px 0;
+    }
+
+    .linkInHeader {
+        font-size: 14px;
+    }
+}
+
+/* Footer styling */
+.linkInKolom1 {
+    display: block;
+    font-size: 18px;
+    color: black;
+}
+
+.linkInKolom1:hover {
+    color: white;
+}
+
+.linkMailKolom3:hover {
+    color: white;
+}
+
+.titel-footer-kolom_1,
+.titelKolom2,
+.titelKolom3 {
+    font-family: $mainFont;
+}
+
+.Footer {
+    background: $mainColor;
+}
+
+.sydney-credits {
+    margin-bottom: 10px !important;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .titel-footer-kolom_1 {
+        margin-top: 0px;
+    }
+
+    #footer-footer {
+        padding: 100px 30px 20px;
+    }
+
+    .linkInKolom3 img {
+        max-width: 50px;
+        width: 100%;
+        max-height: 50px;
+        height: 100%;
+    }
+
+    .linkMailKolom3 {
+        display: block;
+    }
+
+    #footerKolom1,
+    #footerKolom2,
+    #footerKolom3 {
+        margin-bottom: 100px;
+    }
+    
+    .informatieKolom2 {
+        color: black;
+        font-size: 18px;
+    }
+
+    .adresRegel-Kolom3_1,
+    .adresRegel-Kolom3_2 {
+        margin-bottom: 0px;
+        color: black;
+    }
+
+    .linkMailKolom3 {
+        color: black;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 769px)  {
+    .titel-footer-kolom_1 {
+        margin-top: 0px;
+    }
+
+    #footer-footer {
+        padding: 100px 30px 20px;
+    }
+
+    #footer-inhoud {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 11%; 
+    }
+
+    .linkInKolom3 img {
+        max-width: 50px;
+        width: 100%;
+        max-height: 50px;
+        height: 100%;
+    }
+
+    .linkMailKolom3 {
+        display: block;
+        font-size: 18px;
+    }
+
+    #footerKolom1,
+    #footerKolom2,
+    #footerKolom3 {
+        margin-bottom: 100px;
+        flex: 100%;
+    }
+
+    #footer-footer div h2 {
+        line-height: 1.5;
+    }
+    
+    .informatieKolom2 {
+        color: black;
+        font-size: 18px;
+    }
+
+    .adresRegel-Kolom3_1,
+    .adresRegel-Kolom3_2 {
+        margin-bottom: 0px;
+        color: black;
+        font-size: 18px;
+    }
+
+    .linkMailKolom3 {
+        color: black;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .titel-footer-kolom_1 {
+        margin-top: 0px;
+    }
+
+    #footer-footer {
+        padding: 100px 30px 20px;
+    }
+
+    #footer-inhoud {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1600px;
+        width: 100%;
+        margin: 0 auto;
+        gap: 12%;
+    }
+
+    .linkInKolom3 img {
+        max-width: 50px;
+        width: 100%;
+        max-height: 50px;
+        height: 100%;
+    }
+
+    .linkMailKolom3 {
+        display: block;
+        font-size: 18px;
+    }
+
+    #footerKolom1,
+    #footerKolom2,
+    #footerKolom3 {
+        margin-bottom: 100px;
+        flex: 25%;
+    }
+
+    #footer-footer div h2 {
+        line-height: 1.5;
+        font-size: 28px;
+        margin-bottom: 50px;
+    }
+    
+    .informatieKolom2 {
+        color: black;
+        font-size: 18px;
+    }
+
+    .adresRegel-Kolom3_1,
+    .adresRegel-Kolom3_2 {
+        margin-bottom: 0px;
+        color: black;
+        font-size: 18px;
+    }
+
+    .linkMailKolom3 {
+        color: black;
+        margin-bottom: 20px;
+    }
+
+
+    .linkInKolom1 {
+        margin-bottom: 5px;
+    }
+}
+
+/* Home */
+
+.homepage {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.homepage-c2 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.titel-kamersHome {
+    font-family: $mainFont;
+    margin-top: 0px;
+    word-spacing: 100vw;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.buttonHome {
+    background: $mainColor;
+    color: black;
+    padding: 15px 55px; 
+    border-radius: 10px;
+    border: 1px solid $mainColor;
+    font-family: $mainFont;
+    text-transform: uppercase;
+}
+
+.buttonHome:hover {
+    background: transparent;
+    color: $mainColor;
+}
+
+/* Home eerste gedeelte */
+@media only screen and (max-width: 768px) {
+    .homepage-inhoud {
+        padding: 100px 30px;
+    }
+
+    .homepage-c1 {
+        text-align: center;
+    }
+
+    .homepage-c2 h2 {
+        padding: 160px;
+        text-align: center;
+    }
+
+    .titel-kamersHome {
+        margin-bottom: 80px;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 769px)  {
+    .homepage-c1,
+    .homepage-c2 {
+        float: left;
+        width: 50%;
+    }
+
+    .homepage-inhoud:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .homepage-inhoud {
+        padding: 150px 30px 50px;
+    }
+
+    .homepage-c2 h2 {
+        padding: 100px;
+    }
+
+    .homepage-c1 {
+        text-align: center;
+    }
+
+    .titel-kamersHome {
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .homepage-c1,
+    .homepage-c2 {
+        float: left;
+        width: 50%;
+    }
+
+    .homepage-inhoud:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    .homepage-inhoud {
+        max-width: 1600px;
+        width: 100%;
+        margin: 0 auto;
+        padding: 150px 30px;
+        display: flex;
+    }
+
+
+    .homepage-c2 h2 {
+        padding: 160px;
+        text-align: center;
+    }
+
+    .homepage-c1 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .titel-kamersHome {
+        margin-bottom: 50px;
+    }
+}
+
+/* Home tweede gedeelte */
+.homepage-c4 {
+    text-align: center;
+}
+@media only screen and (max-width: 768px) {
+    #homepage-inhoud-2 {
+        padding: 0px 30px;
+    }
+
+    .afbeeldingKamersvoorStudentenHome {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .homepage-c3 {
+        text-align: center;
+    }
+
+    .titel1-studentenKamerHome,
+    .titel2-studentenKamerHome {
+        font-family: $mainFont;
+        display: inline;
+    }
+
+    .titel2-studentenKamerHome {
+        font-size: 50px;
+    }
+
+    .homepage-c4 {
+        padding: 100px 30px;
+    }
+
+    .informatiestudentenkamerhome {
+        margin: 30px 0px 50px 0px;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 769px)  {
+    #homepage-inhoud-2 {
+        padding: 100px 30px;
+    }
+
+    .afbeeldingKamersvoorStudentenHome {
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .homepage-c3 {
+        text-align: center;
+    }
+
+    #homepage-inhoud-2:after {
+        clear: both;
+        display: table;
+        content: "";
+    }
+
+    .homepage-c3,
+    .homepage-c4 {
+        width: 50%;
+        float: left;
+    }
+
+    .titel1-studentenKamerHome,
+    .titel2-studentenKamerHome {
+        font-family: $mainFont;
+        display: inline;
+    }
+
+    .titel1-studentenKamerHome {
+        font-size: 25px;
+    }
+
+    .titel2-studentenKamerHome {
+        font-size: 50px;
+    }
+
+    .homepage-c4 {
+        padding: 100px 30px;
+    }
+
+    .informatiestudentenkamerhome {
+        margin: 30px 0px 50px 0px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #homepage-inhoud-2 {
+        padding: 50px 30px 160px;
+        max-width: 1600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .afbeeldingKamersvoorStudentenHome {
+        max-width: 500px;
+        width: 100%;
+    }
+
+    .homepage-c3 {
+        text-align: center;
+    }
+
+    #homepage-inhoud-2:after {
+        clear: both;
+        display: table;
+        content: "";
+    }
+
+    .homepage-c3,
+    .homepage-c4 {
+        width: 50%;
+        float: left;
+    }
+
+    .titel1-studentenKamerHome,
+    .titel2-studentenKamerHome {
+        font-family: $mainFont;
+        display: inline;
+    }
+
+    .titel2-studentenKamerHome {
+        font-size: 60px;
+    }
+
+    .homepage-c4 {
+        padding: 100px 30px;
+    }
+
+    .informatiestudentenkamerhome {
+        margin: 50px 0px 85px 0px;
+    }
+
+    .titel1-studentenKamerHome {
+        font-size: 30px;
+    }
+}
+
+/* Home Onze Locaties gedeelte */
+#onzeLocatiesHome {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.OnzeLocatiesTitelHome_1,
+.OnzeLocatiesTitelHome_2 {
+    color: white;
+    font-family: $mainFont;
+    display: inline;
+}
+
+.TitelbijAfbeeldingOnzeLocatiesHome_1,
+.TitelbijAfbeeldingOnzeLocatiesHome_2 {
+    color: white;
+    font-family: $mainFont;
+}
+
+@media only screen and (max-width: 768px) {
+    #onzeLocatiesHome {
+        padding: 100px 30px;
+    }
+
+    .OnzeLocatiesTitelHome_1 {
+        font-size: 25px;
+        font-weight: 100;
+    }
+
+    .OnzeLocatiesTitelHome_2 {
+        font-size: 50px;
+        font-weight: 100;
+    }
+
+    .OnzeLocatiesAfbeeldingHome_1 {
+        margin-top: 50px;
+    }
+
+    .OnzeLocatiesAfbeeldingHome_2 {
+        margin-top: 100px;
+    }
+
+    .TitelbijAfbeeldingOnzeLocatiesHome_1, .TitelbijAfbeeldingOnzeLocatiesHome_2 {
+        margin-top: 30px;
+        padding-left: 75px;
+    }
+}
