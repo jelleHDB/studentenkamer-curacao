@@ -88,7 +88,37 @@ $mainFont : PapayaFont;
 .fa-angle-down {
     font-size: 50px;
     color: white;
+    -webkit-animation-name: anchor;
+            animation-name: anchor;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
+    position: relative;
+    -webkit-animation-iteration-count: infinite;
+            animation-iteration-count: infinite;
 }
+
+@-webkit-keyframes anchor {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 10px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
+  @keyframes anchor {
+    0% {
+      top: 0px;
+    }
+    50% {
+      top: 10px;
+    }
+    100% {
+      top: 0px;
+    }
+  }
 
 /* Header responsive */
 @media only screen and (min-width: 1200px) {
@@ -628,9 +658,16 @@ $mainFont : PapayaFont;
     font-family: $mainFont;
 }
 
+.locatiePinAfbeeldingOnzeLocatiesHome {
+    max-width: 100px;
+    width: 100%;
+    max-height: 150px;
+    height: 100%;
+}
+
 @media only screen and (max-width: 768px) {
     #onzeLocatiesHome {
-        padding: 100px 30px;
+        padding: 140px 30px;
     }
 
     .OnzeLocatiesTitelHome_1 {
@@ -645,6 +682,7 @@ $mainFont : PapayaFont;
 
     .OnzeLocatiesAfbeeldingHome_1 {
         margin-top: 50px;
+        display: block;
     }
 
     .OnzeLocatiesAfbeeldingHome_2 {
@@ -653,6 +691,792 @@ $mainFont : PapayaFont;
 
     .TitelbijAfbeeldingOnzeLocatiesHome_1, .TitelbijAfbeeldingOnzeLocatiesHome_2 {
         margin-top: 30px;
-        padding-left: 75px;
+        padding-left: 20px;
+        display: inline;
+    }
+
+    .locatiePinAfbeeldingOnzeLocatiesHome {
+        top: -45px;
+        left: 10px;
+        position: relative;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 769px)  {
+    #onzeLocatiesHome {
+        padding: 140px 30px;
+    }
+
+    .OnzeLocatiesTitelHome_1 {
+        font-size: 25px;
+        font-weight: 100;
+    }
+
+    .OnzeLocatiesTitelHome_2 {
+        font-size: 50px;
+        font-weight: 100;
+    }
+
+    .OnzeLocatiesAfbeeldingHome_1 {
+        margin-top: 50px;
+        display: block;
+        max-width: 800px;
+        width: 100%;
+        margin: 50px auto 0px auto;
+    }
+
+    .OnzeLocatiesAfbeeldingHome_2 {
+        max-width: 800px;
+        width: 100%;
+        display: block;
+        margin: 100px auto 0px auto;
+    }
+
+    .TitelbijAfbeeldingOnzeLocatiesHome_1, .TitelbijAfbeeldingOnzeLocatiesHome_2 {
+        margin-top: 30px;
+        padding-left: 20px;
+        display: inline;
+    }
+
+    .locatiePinAfbeeldingOnzeLocatiesHome {
+        top: -45px;
+        left: 10px;
+        position: relative;
+    }
+
+    #onzeLocatiesHome-c1,
+    #onzeLocatiesHome-c2 {
+        max-width: 800px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #onzeLocatiesHome {
+        padding: 140px 30px;
+    }
+
+    .OnzeLocatiesTitelHome_1 {
+        font-size: 25px;
+        font-weight: 100;
+        padding-left: 40px;
+    }
+
+    .OnzeLocatiesTitelHome_2 {
+        font-size: 50px;
+        font-weight: 100;
+    }
+
+    .OnzeLocatiesAfbeeldingHome_1 {
+        display: block;
+        max-width: 800px;
+        width: 100%;
+        margin: 0px auto 0px auto;
+    }
+
+    .OnzeLocatiesAfbeeldingHome_2 {
+        max-width: 800px;
+        width: 100%;
+        display: block;
+        margin: 0px auto 0px auto;
+    }
+
+    .TitelbijAfbeeldingOnzeLocatiesHome_1, .TitelbijAfbeeldingOnzeLocatiesHome_2 {
+        margin-top: 30px;
+        padding-left: 20px;
+        display: inline;
+        font-weight: 100;
+    }
+
+    .locatiePinAfbeeldingOnzeLocatiesHome {
+        top: -45px;
+        left: 10px;
+        position: relative;
+    }
+
+    #onzeLocatiesHome-c1,
+    #onzeLocatiesHome-c2 {
+        width: 50%;
+        float: left;
+        padding: 0px 40px;
+        margin-top: 100px;
+    }
+
+    #onzeLocatiesHomeInhoud:after {
+        display: table;
+        content: "";
+        clear: both;
+    }
+
+    #onzeLocatiesHomeInhoud {
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Call to action styling */
+#call-to-action-inhoud h2 {
+    display: inline;
+}
+
+.informatie-callToAction_2 {
+    font-family: $mainFont;
+    padding: 0px 5px;
+}
+
+.informatie-callToAction_1,
+.informatie-callToAction_3 {
+    font-family: sans-serif;
+    font-weight: 100;
+}
+
+@media only screen and (max-width: 768px) {
+    #call-to-action-inhoud {
+        padding: 150px 30px;
+        text-align: center;
+    }
+
+
+    #divButtonCTA {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .informatie-callToAction_1,
+    .informatie-callToAction_3 {
+        font-size: 23px;
+    }
+
+    .informatie-callToAction_2 {
+        font-size: 30px;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 769px)  {
+    #call-to-action-inhoud {
+        padding: 150px 30px;
+        text-align: center;
+    }
+
+
+    #divButtonCTA {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .informatie-callToAction_1,
+    .informatie-callToAction_3 {
+        font-size: 26px;
+    }
+
+    .informatie-callToAction_2 {
+        font-size: 35px;
+        padding: 0px 5px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #call-to-action-inhoud {
+        padding: 200px 30px;
+        text-align: center;
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+
+    #divButtonCTA {
+        margin-top: 50px;
+        text-align: center;
+    }
+
+    .informatie-callToAction_1,
+    .informatie-callToAction_3 {
+        font-size: 35px;
+    }
+
+    .informatie-callToAction_2 {
+        font-size: 55px;
+        padding: 0px 5px;
+    }
+
+}
+
+/* SLider korte versie styling */
+
+.titel-sliderKort {
+    margin: 0px 0px;
+    color: white;
+    font-family: $mainFont;
+    text-align: center;
+    font-weight: 100;
+}
+
+#slider-kort-inhoud {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media only screen and (max-width: 768px) {
+    .titel-sliderKort {
+        padding: 250px 0px 200px;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 769px)  {
+    .titel-sliderKort {
+        padding: 280px 0px 230px;
+        font-size: 40px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .titel-sliderKort {
+        padding: 350px 0px 280px;
+        font-size: 55px;
+    }
+}
+
+/* Slider img styling */
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+  }
+  
+  /* Slides */
+  .mySlides {
+    display: none;
+    padding: 0px 50px;
+    text-align: center;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #000000;
+    font-weight: bold;
+    font-size: 40px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  
+
+/* Mambo beach begin styling */
+.blobImg-kamerhurenMambo {
+    filter: drop-shadow(0 0 2.75rem rgba(0, 0, 0, 0.274));
+}
+
+.titel-kamerHurenMambo {
+    font-family: $mainFont;
+    font-weight: 100;
+}
+
+#voordelen-kamerhurenMambo-c1 h2,
+#voordelen-kamerhurenMambo-c2 h2 {
+    font-family: $mainFont;
+    font-weight: 100;
+    display: inline;
+}
+
+.sliderMamboImg {
+    max-width: 500px;
+    width: 100%;
+    max-height: 500px;
+    height: 100%;
+}
+
+#homeMamboInhoud-c1 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: drop-shadow(0 0 1.75rem rgba(128, 128, 128, 2.418));
+}
+
+.fa-check {
+    color: $mainColor;
+    font-size: 25px;
+}
+
+
+@media only screen and (max-width: 768px) {
+    #homeMamboInhoud {
+        padding: 100px 30px;
+    }
+
+    #homeMamboInhoud-c1 {
+        padding: 60px;
+    }
+
+    .titel-kamerHurenMambo {
+        font-size: 45px;
+        margin-top: 75px;
+    }
+
+    .informatie-kamerhurenMambo {
+        font-size: 18px;
+        font-family: sans-serif;
+        margin-bottom: 70px;
+    }
+    #voordelen-kamerhurenMambo-c1 h2, #voordelen-kamerhurenMambo-c2 h2 {
+        font-size: 20px;
+        line-height: 1.7;
+        position: relative;
+        top: 5px;
+        padding-left: 5px;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 769px)  {
+    #homeMamboInhoud {
+        padding: 100px 30px;
+    }
+
+    #homeMamboInhoud-c1 {
+        padding: 60px;
+    }
+
+    .titel-kamerHurenMambo {
+        font-size: 45px;
+    }
+
+    .informatie-kamerhurenMambo {
+        font-size: 18px;
+        font-family: sans-serif;
+        margin-bottom: 30px;
+    }
+    #voordelen-kamerhurenMambo-c1 h2, #voordelen-kamerhurenMambo-c2 h2 {
+        font-size: 20px;
+        line-height: 1.7;
+        position: relative;
+        top: 3px;
+        padding-left: 5px;
+    }
+
+    #homeMamboInhoud-c1,
+    #homeMamboInhoud-c2,
+    #voordelen-kamerhurenMambo-c1,
+    #voordelen-kamerhurenMambo-c2 {
+        width: 50%;
+        float: left;
+    }
+
+    #homeMamboInhoud:after,
+    #homeMamboInhoud-c2:after {
+        display: table;
+        clear: both;
+        content: "";
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #homeMamboInhoud {
+        padding: 150px 30px;
+    }
+
+    #homeMamboInhoud-c1 {
+        padding: 60px;
+    }
+
+    .titel-kamerHurenMambo {
+        font-size: 60px;
+        margin-bottom: 40px;
+    }
+
+    .informatie-kamerhurenMambo {
+        font-size: 18px;
+        font-family: sans-serif;
+        margin-bottom: 40px;
+    }
+    #voordelen-kamerhurenMambo-c1 h2, #voordelen-kamerhurenMambo-c2 h2 {
+        font-size: 20px;
+        line-height: 2;
+        position: relative;
+        top: 3px;
+        padding-left: 5px;
+    }
+
+    #homeMamboInhoud-c1,
+    #homeMamboInhoud-c2,
+    #voordelen-kamerhurenMambo-c1,
+    #voordelen-kamerhurenMambo-c2 {
+        width: 50%;
+        float: left;
+    }
+
+    #homeMamboInhoud:after,
+    #homeMamboInhoud-c2:after {
+        display: table;
+        clear: both;
+        content: "";
+    }
+
+    #homeMamboInhoud {
+        max-width: 1600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* Styling prijzen en boeken */
+.titel-prijzen {
+    font-family: $mainFont;
+}
+
+#prijzen-en-boeken-inhoud-c1 td,
+#prijzen-en-boeken-inhoud-c1 th {
+    border: 0px;
+    text-align: left;
+    font-family: $mainFont;
+}
+
+
+
+#prijzen-en-boeken-inhoud-c2 {
+    background-position: left top;
+    background-repeat: no-repeat;
+    background-size: 100px 100px;
+}
+
+.buttonPrijzen {
+    position: relative;
+    z-index: 2;
+}
+
+@media only screen and (max-width: 768px) {
+    #prijzen-en-boeken-inhoud {
+        padding: 20px 30px 100px;
+    }
+
+    .titel-prijzen {
+        margin-bottom: 50px;
+    }
+
+    #prijzen-en-boeken-inhoud-c1 table {
+        margin-bottom: 50px;
+    }
+
+    .afbeelding_blob-prijzenenBoeken {
+        display: none;
+    }
+
+    #prijzen-en-boeken-inhoud-c2 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        max-width: 400px;
+        width: 100%;
+    }
+
+    .afbeelding_pop-prijzenenBoeken {
+        height: 250px;
+        padding-left: 60px;
+        max-width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 769px)  {
+    #prijzen-en-boeken-inhoud {
+        padding: 20px 30px 100px;
+    }
+
+    .titel-prijzen {
+        margin-bottom: 50px;
+    }
+
+    #prijzen-en-boeken-inhoud-c1 table {
+        margin-bottom: 50px;
+    }
+
+    .afbeelding_blob-prijzenenBoeken {
+        display: none;
+    }
+
+    #prijzen-en-boeken-inhoud-c2 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    #prijzen-en-boeken-inhoud-c1 {
+        float: left;
+        width: 60%;
+        padding-right: 10%;
+    }
+
+    #prijzen-en-boeken-inhoud-c2 {
+        float: left;
+        width: 35%;
+    }
+
+    #prijzen-en-boeken-inhoud:after {
+        display: table;
+        clear: both;
+        content: "";
+    }
+
+    .afbeelding_pop-prijzenenBoeken {
+        height: 250px;
+        max-width: 100%;
+        position: relative;
+        right: 50px;
+        z-index: 1;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #prijzen-en-boeken-inhoud {
+        padding: 20px 30px 100px;
+        max-width: 1400px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .titel-prijzen {
+        margin-bottom: 50px;
+        font-size: 42px;
+    }
+
+    #prijzen-en-boeken-inhoud-c1 table {
+        margin-bottom: 50px;
+    }
+
+    .afbeelding_blob-prijzenenBoeken {
+        display: none;
+    }
+
+    #prijzen-en-boeken-inhoud-c2 {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    #prijzen-en-boeken-inhoud-c1 {
+        float: left;
+        width: 60%;
+        padding-right: 10%;
+    }
+
+    #prijzen-en-boeken-inhoud-c2 {
+        float: left;
+        width: 35%;
+    }
+
+    #prijzen-en-boeken-inhoud:after {
+        display: table;
+        clear: both;
+        content: "";
+    }
+
+    .afbeelding_pop-prijzenenBoeken {
+        height: 250px;
+        max-width: 100%;
+        position: relative;
+        right: 50px;
+        z-index: 1;
+    }
+
+    #prijzen-en-boeken-inhoud-c1 td,
+    #prijzen-en-boeken-inhoud-c1 th {
+        font-size: 20px;
+    }
+}
+
+/* Ligging Mambo Beach styling */
+.titel-locatieMambo {
+    font-family: $mainFont;
+}
+
+#mamboLocatie-inhoud {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 1400px 500px;
+}
+
+.part-of-table-location {
+    width: 200px;
+    border: 0px;
+    font-family: $mainFont;
+    color: black;
+    text-align: left;
+    font-size: 18px;
+}
+
+@media only screen and (max-width: 768px) {
+    #mamboLocatie-inhoud {
+        padding: 20px 30px 100px;
+    }
+
+    #mamboLocatie-inhoud-c1 table {
+        margin: 40px 0px 50px;
+    }
+
+    .google-maps p iframe {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 769px)  {
+    #mamboLocatie-inhoud {
+        padding: 90px 30px 50px;
+        margin-bottom: 100px;
+    }
+
+    #mamboLocatie-inhoud-c1 table {
+        margin: 40px 0px 50px;
+    }
+
+    .google-maps p iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    #mamboLocatie-inhoud-c1,
+    #mamboLocatie-inhoud-c2 {
+        float: left;
+        width: 50%;
+    }
+
+    #mamboLocatie-inhoud:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #mamboLocatie-inhoud {
+        padding: 150px 30px 150px;
+    }
+
+    #mamboLocatie-inhoud-c1 table {
+        margin: 40px 0px 50px;
+    }
+
+    .google-maps p iframe {
+        width: 100%;
+        height: 300px;
+    }
+
+    #mamboLocatie-inhoud-c1,
+    #mamboLocatie-inhoud-c2 {
+        float: left;
+        width: 50%;
+    }
+
+    #mamboLocatie-inhoud:after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+
+    #mamboLocatie-inhoud {
+        max-width: 1400px;
+        width: 100%;
+        margin: 0px auto 100px;
+    }
+}
+
+/* Form styling */
+#form {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#wpforms-199-field_1,
+#wpforms-199-field_2,
+#wpforms-199-field_3 {
+    max-width: 500px;
+    width: 100%;
+    background-color: rgb(202, 202, 202);
+    border: 1px solid rgb(202, 202, 202);
+    border-radius: 5px;
+    padding: 30px;
+    margin: 0 auto !important;
+}
+
+#wpforms-199-field_1::placeholder,
+#wpforms-199-field_2::placeholder,
+#wpforms-199-field_3::placeholder {
+    color: black;
+    font-family: sans-serif;
+    font-size: 18px;
+}
+
+.titel-form {
+    color: white;
+    font-weight: 100;
+    font-family: $mainFont;
+}
+
+.buttonFormKamer {
+    background: $mainColor !important;
+    border: 1px solid $mainColor !important;
+    border-radius: 5px !important;
+    color: rgb(0, 0, 0) !important;
+    font-family: $mainFont !important;
+    font-size: 18px !important;
+    padding: 15px 60px 40px !important;
+}
+
+.buttonFormKamer:hover {
+    background: transparent !important;
+    color: $mainColor !important;
+}
+
+.div.wpforms-container-full {
+    margin: 0 !important;
+}
+
+@media only screen and (max-width: 768px) {
+    #form {
+        padding: 150px 30px;
+        text-align: center;
+    }
+
+    .titel-form {
+        font-size: 45px !important;
+    }
+}
+
+@media only screen and (max-width: 1199px) and (min-width: 769px)  {
+    #form {
+        padding: 180px 30px;
+        text-align: center;
+    }
+
+    .titel-form {
+        font-size: 55px !important;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    #form {
+        padding: 200px 30px;
+        text-align: center;
+    }
+
+    .titel-form {
+        font-size: 60px !important;
+        margin-bottom: 100px;
+    }
+
+    #form-inhoud .wpforms-field-container {
+        margin-bottom: 100px !important;
     }
 }

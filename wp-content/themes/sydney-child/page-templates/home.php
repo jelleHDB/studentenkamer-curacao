@@ -60,9 +60,13 @@ get_header(); ?>
         <?php if( get_field('OnzeLocatiesTitelHome_2') ): ?>
             <h2 class="OnzeLocatiesTitelHome_2"><?php the_field('OnzeLocatiesTitelHome_2'); ?></h2>
         <?php endif; ?>
+        <br>
         <div id="onzeLocatiesHome-c1">
             <?php if( get_field('OnzeLocatiesAfbeeldingHome_1') ): ?>
                 <img class="OnzeLocatiesAfbeeldingHome_1" src="<?php the_field('OnzeLocatiesAfbeeldingHome_1'); ?>" />
+            <?php endif; ?>
+            <?php if( get_field('locatiePinAfbeeldingOnzeLocatiesHome') ): ?>
+                <img class="locatiePinAfbeeldingOnzeLocatiesHome" src="<?php the_field('locatiePinAfbeeldingOnzeLocatiesHome'); ?>" />
             <?php endif; ?>
             <?php if( get_field('TitelbijAfbeeldingOnzeLocatiesHome_1') ): ?>
                 <h2 class="TitelbijAfbeeldingOnzeLocatiesHome_1"><?php the_field('TitelbijAfbeeldingOnzeLocatiesHome_1'); ?></h2>
@@ -72,12 +76,17 @@ get_header(); ?>
             <?php if( get_field('OnzeLocatiesAfbeeldingHome_2') ): ?>
                 <img class="OnzeLocatiesAfbeeldingHome_2" src="<?php the_field('OnzeLocatiesAfbeeldingHome_2'); ?>" />
             <?php endif; ?>
+            <?php if( get_field('locatiePinAfbeeldingOnzeLocatiesHome') ): ?>
+                <img class="locatiePinAfbeeldingOnzeLocatiesHome" src="<?php the_field('locatiePinAfbeeldingOnzeLocatiesHome'); ?>" />
+            <?php endif; ?>
             <?php if( get_field('TitelbijAfbeeldingOnzeLocatiesHome_2') ): ?>
                 <h2 class="TitelbijAfbeeldingOnzeLocatiesHome_2"><?php the_field('TitelbijAfbeeldingOnzeLocatiesHome_2'); ?></h2>
             <?php endif; ?>
         </div>
     </div>
 </div>
+
+<?php include 'callToAction.php';?>
 
 <?php get_footer(); ?>
 
